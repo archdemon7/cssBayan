@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-container {
+    max-width: 600px;
+}
+
+.mem-img {
+    width: 100%;
+}
+
+.mem .img-container{
+    display: none;
+}
+
+.mem:hover .img-container {
+    display: block;
+}
+
+.mem:focus .img-container {
+    display: block;
+}
+
+.mem:focus {
+    outline: none;
+}
