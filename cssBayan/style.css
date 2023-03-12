@@ -1,18 +1,34 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .wrapper {
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.title {
+    text-align: center;
+    font-size: 48px;
+}
+
+.mem {
+    background-color: goldenrod;
+}
+
+.mem-header {
+    border-top: 2px solid gray;
+}
+
 .img-container {
+    display: flex;
     max-width: 600px;
+    margin: 0 auto;
 }
 
 .mem-img {
