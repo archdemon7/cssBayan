@@ -152,6 +152,6 @@
 
 @media (hover: none) {
     .wrapper .mem .mem-header .icon {
-        display: block;
+        visibility: visible;
     }
   }
