@@ -24,7 +24,7 @@
     backdrop-filter: blur(0.3125rem);
     font-size: 1vw;
     color: blue;
-    transition: color 0.1s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 .wrapper:hover .mem{
@@ -44,6 +44,7 @@
     height: 2rem;
     background-image: url('./assets/open.png');
     background-size: cover;
+    transition: all 0.5s ease-in-out;
 }
 
 .mem:hover .mem-header .icon {
@@ -51,12 +52,13 @@
 }
 
 .wrapper .mem .mem-header .icon {
-    display: none;
-    transition: display 0.2s ease-in-out;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
 .wrapper:hover .mem .mem-header .icon {
-    display: block;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
 }
 
 .mem:focus {
@@ -72,8 +74,9 @@
 }
 
 .mem:focus .mem-header .icon {
-    display: none;
+    visibility: hidden;
     background-image: url('./assets/close.png');
+    transition: all 0.3s ease-in-out;
 }
 
 .img-container {
