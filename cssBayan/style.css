@@ -44,7 +44,7 @@
     height: 2rem;
     background-image: url('./assets/open.png');
     background-size: cover;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .mem:hover .mem-header .icon {
@@ -58,7 +58,7 @@
 
 .wrapper:hover .mem .mem-header .icon {
     visibility: visible;
-    transition: all 0.3s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .mem:focus {
@@ -76,7 +76,7 @@
 .mem:focus .mem-header .icon {
     visibility: hidden;
     background-image: url('./assets/close.png');
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .img-container {
