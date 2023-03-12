@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    transition: all 0.5s ease-in-out;
+
 }
 
 .wrapper {
@@ -23,6 +23,12 @@
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(0.3125rem);
     font-size: 1vw;
+    color: blue;
+    transition: color 0.1s ease-in-out;
+}
+
+.wrapper:hover .mem{
+    color: black;
 }
 
 .mem-header {
@@ -53,8 +59,20 @@
     display: block;
 }
 
+.mem:focus {
+    color: black;
+}
+
+.mem:focus:active {
+    color: rgb(53, 53, 241);
+}
+
+.mem:focus:active .mem-header .icon {
+    background-image: url('./assets/close-blue.png');
+}
+
 .mem:focus .mem-header .icon {
-    display: block;
+    display: none;
     background-image: url('./assets/close.png');
 }
 
@@ -62,6 +80,7 @@
     display: flex;
     max-width: 0;
     margin: 0 auto;
+    transition: all 0.5s ease-in-out;
 }
 
 .mem-img {
