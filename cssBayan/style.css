@@ -127,3 +127,9 @@
         font-size: 3vw;
     }
 }
+
+@media (hover: none) {
+    .wrapper .mem .mem-header .icon {
+        display: block;
+    }
+  }
